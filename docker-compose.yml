@@ -1,0 +1,12 @@
+services:
+
+  agro-tech:
+    build: ./frontend
+    container_name: agro-tech
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend:/app
+      - ./app/node_modules
+    stdin_open: true
+    tty: true
