@@ -3,7 +3,7 @@ import qrTelegram from '../assets/qr-telegram.png';
 import qrVK from '../assets/qr-vk.png';
 
 const JoinSection = () => (
-  <section className="join">
+  <section className="join" id="contacts">
     <h2>Присоединяйтесь к сообществу</h2>
     <p>Следите за обновлениями, задавайте вопросы и делитесь опытом вместе с другими садоводами</p>
     <div className="join-grid">
