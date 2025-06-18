@@ -8,12 +8,18 @@ const JoinSection = () => (
     <p>Следите за обновлениями, задавайте вопросы и делитесь опытом вместе с другими садоводами</p>
     <div className="join-grid">
       <div className="join-card">
+        <p className="qr-label">Telegram канал</p>
         <img src={qrTelegram} alt="QR Telegram" className="qr" />
-          <p><a href="https://t.me/GreenCodeTech">Telegram канал</a></p>
+        <a href="https://t.me/GreenCodeTech" target="_blank" rel="noopener noreferrer" className="qr-button">
+          Перейти в Telegram →
+        </a>
       </div>
       <div className="join-card">
+        <p className="qr-label">Группа ВКонтакте</p>
         <img src={qrVK} alt="QR VK" className="qr" />
-          <p><a href="https://vk.com/club230958317">Группа ВКонтакте</a></p>
+        <a href="https://vk.com/club230958317" target="_blank" rel="noopener noreferrer" className="qr-button">
+          Перейти в VK →
+        </a>
       </div>
     </div>
   </section>
