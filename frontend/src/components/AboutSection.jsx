@@ -4,9 +4,9 @@ import team2 from '../assets/img_1.png';
 import team3 from '../assets/img_2.png';
 
 const team = [
-  { name: 'Ирина Иринова', role: 'Агроном-эксперт', photo: team1, email: 'irina@agrotech.ru' },
-  { name: 'Алексей Смирнов', role: 'Разработчик алгоритмов', photo: team2, email: 'alexey@agrotech.ru' },
-  { name: 'Мария Орлова', role: 'Дизайнер интерфейсов', photo: team3, email: 'maria@agrotech.ru' },
+  { name: 'Имя Фамилия', role: 'Роль', photo: team1, email: 'user@agrotech.ru' },
+  { name: 'Имя Фамилия', role: 'Роль', photo: team2, email: 'user@agrotech.ru' },
+  { name: 'Имя Фамилия', role: 'Роль', photo: team3, email: 'user@agrotech.ru' },
 ];
 
 const AboutSection = () => (
