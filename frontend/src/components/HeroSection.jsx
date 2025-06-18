@@ -8,11 +8,14 @@ const HeroSection = () => (
   <section className="hero-grid">
     <div className="hero-left">
       <h1>Агротех</h1>
-      <p>
-        Нарисуй участок, узнай что посажено, получай рекомендации, диагностику и напоминания по уходу.
-        Всё в одном месте — на твоём телефоне или ноутбуке.
-      </p>
-      <a href="#features" className="cta-button">Возможности сервиса</a>
+        <p className="hero-subtitle">
+          Цифровой помощник для садоводов и огородников.
+        </p>
+        <p className="hero-desc">
+          Построй схему участка, получай рекомендации, диагностику и напоминания по уходу.
+            Всё в одном месте — на твоём телефоне или ноутбуке.
+        </p>
+        <a href="#features" className="cta-button">Возможности сервиса</a>
     </div>
     <div className="hero-right">
       <img src={heroImg} alt="Главный экран сервиса" />
