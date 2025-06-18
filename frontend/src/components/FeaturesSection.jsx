@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const features = [
   {
@@ -40,22 +40,51 @@ const features = [
     icon: '📦',
     title: 'Интеграция с магазинами',
     text: 'Связь с каталогами семян, удобрений и заказ нужного онлайн.',
-  }
+  },
 ];
 
-const FeaturesSection = () => (
-  <section className="features" id="features">
-    <h2>Возможности сервиса</h2>
-    <div className="features-grid">
-      {features.map(({ icon, title, text }) => (
-        <div className="feature-card" key={title}>
-          <div className="feature-icon">{icon}</div>
-          <h3>{title}</h3>
-          <p>{text}</p>
+const FeaturesSection = () => {
+  useEffect(() => {
+    const slider = document.getElementById('featureSlider');
+    let scrollAmount = 0;
+
+    const scrollStep = 320; // ширина одной карточки + gap
+    const interval = 3000; // каждые 3 секунды
+
+    const autoScroll = setInterval(() => {
+      if (!slider) return;
+
+      if (scrollAmount + slider.clientWidth >= slider.scrollWidth) {
+        scrollAmount = 0;
+      } else {
+        scrollAmount += scrollStep;
+      }
+
+      slider.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth',
+      });
+    }, interval);
+
+    return () => clearInterval(autoScroll);
+  }, []);
+
+  return (
+    <section className="features" id="features">
+      <h2>Возможности сервиса</h2>
+      <div className="features-slider-wrapper">
+        <div className="features-slider" id="featureSlider">
+          {features.map(({ icon, title, text }) => (
+            <div className="feature-card" key={title}>
+              <div className="feature-icon">{icon}</div>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </section>
-);
+      </div>
+    </section>
+  );
+};
 
 export default FeaturesSection;

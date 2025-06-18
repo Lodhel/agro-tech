@@ -441,23 +441,34 @@ p {
   color: #4b5563;
   line-height: 1.5;
 }
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-  margin-top: 40px;
+.features-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding-top: 32px;
 }
-@media (max-width: 768px) {
-  .features-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    padding-bottom: 16px;
-  }
 
-  .feature-card {
-    flex: 0 0 80%;
-    scroll-snap-align: center;
-  }
+.features-slider {
+  display: flex;
+  gap: 24px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+}
+
+.feature-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
