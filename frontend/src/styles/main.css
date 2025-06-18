@@ -35,6 +35,58 @@ p {
   margin: 0 0 16px;
 }
 
+.header {
+  background-color: white;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #10b981;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #374151;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #10b981;
+}
+
+.header-button {
+  background-color: #10b981;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.header-button:hover {
+  background-color: #059669;
+}
+
 /* Hero */
 .hero {
   text-align: center;
@@ -221,20 +273,41 @@ p {
 }
 
 .hero-left {
-  background-color: #f3f4f6;
+  background-color: #e5f4e9; /* светлый природный оттенок */
   border-radius: 16px;
-  padding: 24px;
+  padding: 40px 32px;
+  box-shadow: inset 6px 0 0 #10b981; /* акцентная зелёная линия слева */
 }
 
 .hero-left h1 {
-  font-size: 2rem;
-  margin-bottom: 16px;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+  color: #1f2937;
 }
 
 .hero-left p {
-  font-size: 1rem;
-  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 24px;
 }
+
+.hero-left .cta-button {
+  display: inline-block;
+  background-color: #10b981;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-left .cta-button:hover {
+  background-color: #059669;
+}
+
 
 .hero-right {
   display: flex;
