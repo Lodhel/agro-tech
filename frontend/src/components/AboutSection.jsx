@@ -4,15 +4,18 @@ import team2 from '../assets/img_1.png';
 import team3 from '../assets/img_2.png';
 
 const team = [
-  { name: 'Имя Фамилия', role: 'CEO', photo: team1, email: 'name@agrotech.ru' },
-  { name: 'Имя Фамилия', role: 'Агроном', photo: team2, email: 'name@agrotech.ru' },
-  { name: 'Имя Фамилия', role: 'Разработчик', photo: team3, email: 'name@agrotech.ru' },
+  { name: 'Ирина Зеленская', role: 'Агроном-эксперт', photo: team1, email: 'irina@agrotech.ru' },
+  { name: 'Алексей Смирнов', role: 'Разработчик алгоритмов', photo: team2, email: 'alexey@agrotech.ru' },
+  { name: 'Мария Орлова', role: 'Дизайнер интерфейсов', photo: team3, email: 'maria@agrotech.ru' },
 ];
 
 const AboutSection = () => (
   <section className="about" id="about">
     <h2>О нас</h2>
-    <p>Агротех Помощник — это инициатива группы энтузиастов, объединивших агрономию и цифровые технологии.</p>
+    <p>
+      «Агротех» — это сервис, созданный с любовью к земле и технологиям. Мы объединили знания агрономии, машинного обучения и
+      дизайна, чтобы каждый мог легко и с удовольствием заботиться о своём участке.
+    </p>
     <div className="team-grid">
       {team.map(({ name, role, photo, email }) => (
         <div className="team-card" key={name}>

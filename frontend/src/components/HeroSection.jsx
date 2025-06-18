@@ -2,9 +2,11 @@ import React from 'react';
 
 const HeroSection = () => (
   <section className="hero">
-    <h1>Агротех Помощник</h1>
-    <p>Цифровой помощник для садоводов и огородников</p>
-    <a href="#features" className="cta-button">Узнать больше</a>
+    <div className="hero-content">
+      <h1>Агротех</h1>
+      <p>Цифровой помощник для садоводов и огородников: управляйте участком, получайте рекомендации и будьте уверены в урожае</p>
+      <a href="#features" className="cta-button">Посмотреть возможности</a>
+    </div>
   </section>
 );
 
