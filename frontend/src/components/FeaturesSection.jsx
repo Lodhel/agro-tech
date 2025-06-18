@@ -44,15 +44,16 @@ const features = [
 ];
 
 const FeaturesSection = () => {
+  const sliderRef = useRef(null);
+
   useEffect(() => {
-    const slider = document.getElementById('featureSlider');
+    const slider = sliderRef.current;
     if (!slider) return;
 
     const scrollStep = 320;
     const interval = 3000;
 
     const autoScroll = setInterval(() => {
-      if (!slider) return;
       if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
         slider.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
@@ -67,7 +68,7 @@ const FeaturesSection = () => {
     <section className="features" id="features">
       <h2>Возможности сервиса</h2>
       <div className="features-slider-wrapper">
-        <div className="features-slider" id="featureSlider">
+        <div className="features-slider" ref={sliderRef}>
           {features.map(({ icon, title, text }) => (
             <div className="feature-card" key={title}>
               <div className="feature-icon">{icon}</div>
