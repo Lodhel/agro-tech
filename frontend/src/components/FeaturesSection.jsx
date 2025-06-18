@@ -46,24 +46,19 @@ const features = [
 const FeaturesSection = () => {
   useEffect(() => {
     const slider = document.getElementById('featureSlider');
-    let scrollAmount = 0;
 
-    const scrollStep = 320; // ширина одной карточки + gap
+    const scrollStep = 320; // ширина одной карточки + отступ
     const interval = 3000; // каждые 3 секунды
 
     const autoScroll = setInterval(() => {
       if (!slider) return;
 
-      if (scrollAmount + slider.clientWidth >= slider.scrollWidth) {
-        scrollAmount = 0;
+      // Если дошли до конца — возвращаем в начало
+      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
-        scrollAmount += scrollStep;
+        slider.scrollBy({ left: scrollStep, behavior: 'smooth' });
       }
-
-      slider.scrollTo({
-        left: scrollAmount,
-        behavior: 'smooth',
-      });
     }, interval);
 
     return () => clearInterval(autoScroll);
