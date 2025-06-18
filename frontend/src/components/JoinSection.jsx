@@ -9,7 +9,7 @@ const JoinSection = () => (
     <div className="join-grid">
       <div className="join-card">
         <img src={qrTelegram} alt="QR Telegram" className="qr" />
-        <p>Telegram-группа</p>
+        <p>Telegram канал</p>
       </div>
       <div className="join-card">
         <img src={qrVK} alt="QR VK" className="qr" />
