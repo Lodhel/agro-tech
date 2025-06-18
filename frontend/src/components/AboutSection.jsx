@@ -17,8 +17,8 @@ const AboutSection = () => (
       дизайна, чтобы каждый мог легко и с удовольствием заботиться о своём участке.
     </p>
     <div className="team-grid">
-      {team.map(({ name, role, photo, email }) => (
-        <div className="team-card" key={name}>
+      {team.map(({ name, role, photo, email }, index) => (
+        <div className="team-card" key={`${name}-${index}`}>
           <img src={photo} alt={name} className="team-photo" />
           <h3>{name}</h3>
           <p>{role}</p>
