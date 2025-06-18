@@ -176,10 +176,12 @@ p {
 
 .team-photo {
   width: 100%;
+  max-width: 200px;
   height: 240px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 16px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto 16px;
 }
 
 /* Join */
@@ -216,7 +218,7 @@ p {
 
 .qr {
   width: 100%;
-  max-width: 140px;
+  max-width: 240px;
   height: auto;
   object-fit: contain;
   margin-bottom: 12px;
