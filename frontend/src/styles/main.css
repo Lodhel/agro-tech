@@ -87,19 +87,6 @@ p {
   background-color: #059669;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 120px 20px 100px;
-}
-
-.hero-content p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.125rem;
-  color: #4b5563;
-}
-
 .cta-button {
   margin-top: 24px;
   display: inline-block;
@@ -301,11 +288,58 @@ p {
   padding: 60px 20px 30px;
 }
 
+.hero {
+  background: linear-gradient(to right, #f0fdf4, #e0f7ec);
+  padding: 80px 20px 60px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .hero-left {
-  background-color: #e5f4e9; /* светлый природный оттенок */
+  max-width: 540px;
+}
+
+.hero-left h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 28px;
+}
+
+.hero-left .cta-button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.hero-left .cta-button:hover {
+  background-color: #059669;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
   border-radius: 16px;
-  padding: 40px 32px;
-  box-shadow: inset 6px 0 0 #10b981; /* акцентная зелёная линия слева */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
 .hero-left h1 {
@@ -381,10 +415,11 @@ p {
 }
 
 .hero-left h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #1f2937;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #1a202c;
+  line-height: 1.2;
 }
 
 .hero-subtitle {
@@ -399,6 +434,14 @@ p {
   color: #374151;
   margin-bottom: 24px;
   max-width: 440px;
+}
+
+.hero-subnote {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #6b7280; /* тёплый серый */
+  font-style: italic;
+  font-weight: 500;
 }
 
 .small-card {
