@@ -8,7 +8,7 @@ body {
 }
 
 section {
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 .container {
   max-width: 1200px;
@@ -109,7 +109,7 @@ p {
 /* Stats */
 .stats {
   background-color: #ffffff;
-  padding: 80px 20px 40px;
+  padding: 30px 20px 10px;
 }
 
 .stats-grid {
@@ -276,7 +276,7 @@ p {
   }
 
   .hero {
-    padding: 80px 20px 60px;
+    padding: 50px 20px 35px;
   }
 
   .feature-card,
@@ -293,7 +293,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  padding: 60px 20px 30px;
+  padding: 30px 20px 15px;
 }
 
 .hero {
