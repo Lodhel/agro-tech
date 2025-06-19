@@ -13,7 +13,7 @@ const HeroSection = () => {
             <a href="tel:+79654128395">+7 965 412‑83‑95</a>
           </div>
 
-          <h1>Агротех</h1>
+          <h1>AgroSpector</h1>
           <p className="hero-subtitle">Цифровой помощник для садоводов и огородников</p>
 
           <p className="hero-desc">

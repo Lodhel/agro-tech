@@ -14,8 +14,12 @@ function App() {
       <Header />
       <HeroSection />
       <StatsSection />
-      <FeaturesSection />
-      <AboutSection />
+
+      <section className="gradient-wrapper">
+          <FeaturesSection />
+          <AboutSection />
+      </section>
+
       <JoinSection />
       <Footer />
     </>

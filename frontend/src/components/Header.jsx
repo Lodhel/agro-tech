@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => (
   <header className="header">
     <div className="container">
-      <div className="logo">Агротех</div>
+      <div className="logo">AgroSpector</div>
       <nav className="nav">
         <a href="#top">Главная</a>
         <a href="#features">Возможности</a>

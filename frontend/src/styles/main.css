@@ -580,3 +580,8 @@ p {
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
+
+.gradient-wrapper {
+  background: linear-gradient(to bottom, #ffffff, #e6fdf2);
+  padding: 100px 0;
+}
