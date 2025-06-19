@@ -133,14 +133,6 @@ p {
   margin-top: 40px;
 }
 
-.feature-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
 /* About / Team */
 .about p {
   max-width: 800px;
@@ -312,19 +304,6 @@ p {
   max-width: 540px;
 }
 
-.hero-left h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
-  color: #1a202c;
-  margin-bottom: 20px;
-}
-
-.hero-left p {
-  font-size: 1.125rem;
-  color: #4a5568;
-  margin-bottom: 28px;
-}
-
 .hero-left .cta-button {
   background-color: #10b981;
   color: white;
@@ -346,12 +325,6 @@ p {
   height: auto;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-}
-
-.hero-left h1 {
-  font-size: 2.25rem;
-  margin-bottom: 20px;
-  color: #1f2937;
 }
 
 .hero-left p {
@@ -428,14 +401,6 @@ p {
   gap: 24px;
   margin-top: 32px;
   margin-bottom: 15px;
-}
-
-.small-card {
-  background-color: white;
-  padding: 16px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
 }
 
 .small-card img {
@@ -532,36 +497,56 @@ p {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-.features-slider-wrapper {
-  overflow: hidden;
-  position: relative;
-  padding-top: 32px;
-}
-
-.features-slider {
-  display: flex;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  padding-bottom: 16px;
-  scroll-behavior: smooth;
+  margin-top: 32px;
 }
 
-.feature-card-tile {
-  flex: 0 0 300px;
-  scroll-snap-align: start;
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
-  border-radius: 20px;
-  padding: 24px;
-  color: white;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
+
+.feature-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 41, 55, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.feature-modal {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.modal-close {
+  margin-top: 20px;
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.modal-close:hover {
+  background: #d1d5db;
+}
+
 
 .feature-card-tile h3 {
   font-size: 1.125rem;
@@ -574,22 +559,21 @@ p {
   color: #cbd5e1;
 }
 
-.feature-icon {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
+.feature-card {
+  flex: 0 0 300px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
 }
 
-.feature-button {
-  margin-top: auto;
-  background: white;
-  color: #2563eb;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
 
 .feature-button:hover {
   background-color: #f1f5f9;
@@ -629,21 +613,6 @@ p {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding-bottom: 12px;
-}
-
-.feature-card {
-  flex: 0 0 300px;
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 32px 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  scroll-snap-align: start;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 320px;
 }
 
 .feature-card:hover {
