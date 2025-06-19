@@ -289,8 +289,19 @@ p {
 }
 
 .hero {
-  background: linear-gradient(to right, #f0fdf4, #e0f7ec);
-  padding: 80px 20px 60px;
+  width: 100vw;
+  background: linear-gradient(to bottom, #e7f9f0, #ffffff);
+  position: relative;
+  padding: 100px 20px 60px;
+  overflow: hidden;
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .hero-grid {
