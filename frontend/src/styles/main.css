@@ -294,15 +294,6 @@ p {
   overflow: visible;
 }
 
-.hero-wave {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: -200px;
-  pointer-events: none;
-  z-index: 1;
-}
-
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -395,6 +386,19 @@ p {
 }
 
 .hero-phone a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-phone-floating {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.hero-phone-floating a {
   color: inherit;
   text-decoration: none;
 }
