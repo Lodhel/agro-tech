@@ -9,8 +9,6 @@ body {
 
 section {
   padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -291,19 +289,18 @@ p {
 .hero {
   width: 100%;
   background: linear-gradient(to bottom, #e6fdf2, #ffffff);
-  padding: 100px 0 80px;
+  padding: 100px 0 200px;
   position: relative;
   overflow: visible;
 }
 
 .hero-wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: block;
   width: 100%;
   height: auto;
-  z-index: 0;
+  margin-top: -200px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .hero-grid {
