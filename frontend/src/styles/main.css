@@ -289,11 +289,11 @@ p {
 }
 
 .hero {
-  width: 100vw;
-  background: linear-gradient(to bottom, #e7f9f0, #ffffff);
+  width: 100%;
+  background: linear-gradient(to bottom, #e6fdf2, #ffffff);
+  padding: 100px 0 80px;
   position: relative;
-  padding: 100px 20px 60px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-wave {
@@ -302,6 +302,8 @@ p {
   left: 0;
   width: 100%;
   height: auto;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-grid {
