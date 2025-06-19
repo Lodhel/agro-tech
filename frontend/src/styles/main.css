@@ -141,11 +141,6 @@ p {
   text-align: center;
 }
 
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 24px;
-}
-
 /* About / Team */
 .about p {
   max-width: 800px;
@@ -522,7 +517,6 @@ p {
 
 .features {
   padding: 80px 0;
-  background: linear-gradient(to bottom, #e6fdf2, #ffffff);
 }
 
 .features h2 {
@@ -533,28 +527,81 @@ p {
   margin-bottom: 40px;
 }
 
-.feature-card {
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  cursor: default;
-}
-
 .feature-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
+.features-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding-top: 32px;
+}
+
+.features-slider {
+  display: flex;
+  gap: 24px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+}
+
+.feature-card-tile {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  border-radius: 20px;
+  padding: 24px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.feature-card-tile h3 {
+  font-size: 1.125rem;
+  margin: 12px 0;
+  color: #e0f2fe;
+}
+
+.feature-card-tile p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
 .feature-icon {
-  font-size: 2rem;
-  margin-bottom: 16px;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.feature-button {
+  margin-top: auto;
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.feature-button:hover {
+  background-color: #f1f5f9;
+}
+
+.feature-details {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+  color: #f0fdf4;
 }
 
 .feature-card h3 {
