@@ -299,7 +299,7 @@ p {
 .hero {
   width: 100%;
   background: linear-gradient(to bottom, #e6fdf2, #ffffff);
-  padding: 100px 0 50px;
+  padding: 10px 0 10px;
   position: relative;
   overflow: visible;
 }
