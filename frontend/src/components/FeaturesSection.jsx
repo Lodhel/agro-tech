@@ -54,17 +54,25 @@ const features = [
 const FeaturesSection = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
+  const openModal = (feature) => {
+    setSelectedFeature(feature);
+  };
+
+  const closeModal = () => {
+    setSelectedFeature(null);
+  };
+
   return (
     <section className="features" id="features">
       <div className="container">
         <h2>Возможности сервиса</h2>
         <div className="features-grid">
-          {features.map((feature, idx) => (
-            <div className="feature-card" key={idx}>
+          {features.map((feature) => (
+            <div className="feature-card" key={feature.title}>
               <img src={feature.icon} alt={feature.title} className="feature-icon" />
               <h3>{feature.title}</h3>
               <p>{feature.text}</p>
-              <button className="feature-button" onClick={() => setSelectedFeature(feature)}>
+              <button className="feature-button" onClick={() => openModal(feature)}>
                 Подробнее
               </button>
             </div>
@@ -72,13 +80,13 @@ const FeaturesSection = () => {
         </div>
 
         {selectedFeature && (
-          <div className="feature-modal-overlay" onClick={() => setSelectedFeature(null)}>
+          <div className="feature-modal-overlay" onClick={closeModal}>
             <div className="feature-modal" onClick={(e) => e.stopPropagation()}>
+              <img src={selectedFeature.icon} alt={selectedFeature.title} className="feature-modal-icon" />
               <h3>{selectedFeature.title}</h3>
-              <p>{selectedFeature.details}</p>
-              <button className="modal-close" onClick={() => setSelectedFeature(null)}>
-                Закрыть
-              </button>
+              <p>{selectedFeature.text}</p>
+              <p className="feature-details">{selectedFeature.details}</p>
+              <button className="modal-close" onClick={closeModal}>Закрыть</button>
             </div>
           </div>
         )}
