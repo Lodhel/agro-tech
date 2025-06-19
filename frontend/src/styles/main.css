@@ -142,8 +142,8 @@ p {
 }
 
 .feature-icon {
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
 }
 
 /* About / Team */
@@ -299,7 +299,7 @@ p {
 .hero {
   width: 100%;
   background: linear-gradient(to bottom, #e6fdf2, #ffffff);
-  padding: 10px 0 10px;
+  padding: 0 0 10px;
   position: relative;
   overflow: visible;
 }
@@ -519,6 +519,20 @@ p {
   font-weight: 500;
   margin: 0;
 }
+
+.features {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #e6fdf2, #ffffff);
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
 .feature-card {
   background: white;
   border-radius: 16px;
@@ -546,45 +560,43 @@ p {
 .feature-card h3 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 12px;
+  color: #111827;
+  margin-bottom: 8px;
 }
 
 .feature-card p {
   font-size: 0.95rem;
   color: #4b5563;
-  line-height: 1.5;
+  line-height: 1.4;
 }
+
 .features-slider-wrapper {
   overflow: hidden;
-  position: relative;
-  padding-top: 32px;
+  padding: 0 20px;
 }
 
 .features-slider {
   display: flex;
   gap: 24px;
-  scroll-snap-type: x mandatory;
   overflow-x: auto;
-  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  padding-bottom: 12px;
 }
 
 .feature-card {
-  flex: 0 0 300px;
-  scroll-snap-align: start;
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
+  flex: 0 0 280px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease;
-  height: 100%;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .gradient-wrapper {
