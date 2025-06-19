@@ -1,50 +1,60 @@
-import React, { useState } from 'react';
+import React from 'react';
+import FeatureCard from './FeatureCard';
+
+import map from '../icons/map.svg';
+import plant from '../icons/plant.svg';
+import droplet from '../icons/droplet.svg';
+import photo from '../icons/photo.svg';
+import pill from '../icons/pill.svg';
+import calendar from '../icons/calendar.svg';
+import forum from '../icons/forum.svg';
+import shop from '../icons/shopping-cart.svg';
 
 const features = [
   {
-    icon: '/icons/map.svg',
+    icon: map,
     title: 'Интерактивная карта участка',
     text: 'Отмечайте грядки, деревья, кустарники.',
     details: 'Планируйте размещение культур, редактируйте зоны, сохраняйте историю изменений.',
   },
   {
-    icon: '/icons/plant.svg',
+    icon: plant,
     title: 'База растений',
     text: 'Рекомендации по срокам и уходу.',
     details: 'Карточки с параметрами: посев, полив, температура, подкормка.',
   },
   {
-    icon: '/icons/drop.svg',
+    icon: droplet,
     title: 'Уход за растениями',
     text: 'Советы по поливу, подкормке, обрезке.',
     details: 'Системные напоминания, учёт климата и состава почвы.',
   },
   {
-    icon: '/icons/photo.svg',
+    icon: photo,
     title: 'Диагностика по фото',
     text: 'Загружайте фото и получайте рекомендации.',
     details: 'Нейросеть определяет болезни по листу и предлагает методы лечения.',
   },
   {
-    icon: '/icons/medicine.svg',
+    icon: pill,
     title: 'Методы лечения',
     text: 'Выбор эффективных средств.',
     details: 'Народные, биологические и химические методы борьбы с вредителями.',
   },
   {
-    icon: '/icons/calendar.svg',
+    icon: calendar,
     title: 'Календарь садовода',
     text: 'Планирование задач и напоминания.',
     details: 'Создавайте график ухода, отслеживайте прогресс по неделям и сезонам.',
   },
   {
-    icon: '/icons/forum.svg',
+    icon: forum,
     title: 'Форум и сообщество',
     text: 'Общение и обмен опытом.',
     details: 'Читайте советы, задавайте вопросы и находите единомышленников.',
   },
   {
-    icon: '/icons/shop.svg',
+    icon: shop,
     title: 'Интеграция с магазинами',
     text: 'Заказывайте семена и удобрения.',
     details: 'Интеграция с Wildberries, Ozon и агро-магазинами. Оплата и доставка онлайн.',
@@ -52,44 +62,21 @@ const features = [
 ];
 
 const FeaturesSection = () => {
-  const [selectedFeature, setSelectedFeature] = useState(null);
-
-  const openModal = (feature) => {
-    setSelectedFeature(feature);
-  };
-
-  const closeModal = () => {
-    setSelectedFeature(null);
-  };
-
   return (
     <section className="features" id="features">
       <div className="container">
         <h2>Возможности сервиса</h2>
         <div className="features-grid">
-          {features.map((feature) => (
-            <div className="feature-card" key={feature.title}>
-              <img src={feature.icon} alt={feature.title} className="feature-icon" />
-              <h3>{feature.title}</h3>
-              <p>{feature.text}</p>
-              <button className="feature-button" onClick={() => openModal(feature)}>
-                Подробнее
-              </button>
-            </div>
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              icon={feature.icon}
+              title={feature.title}
+              text={feature.text}
+              details={feature.details}
+            />
           ))}
         </div>
-
-        {selectedFeature && (
-          <div className="feature-modal-overlay" onClick={closeModal}>
-            <div className="feature-modal" onClick={(e) => e.stopPropagation()}>
-              <img src={selectedFeature.icon} alt={selectedFeature.title} className="feature-modal-icon" />
-              <h3>{selectedFeature.title}</h3>
-              <p>{selectedFeature.text}</p>
-              <p className="feature-details">{selectedFeature.details}</p>
-              <button className="modal-close" onClick={closeModal}>Закрыть</button>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
