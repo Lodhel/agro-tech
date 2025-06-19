@@ -30,18 +30,22 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="hero-small-cards">
-        <div className="small-card">
-          <img src={card1} alt="Распознавание болезни по фото" />
-          <p>Определи заболевание по фото растения</p>
-        </div>
-        <div className="small-card">
-          <img src={card2} alt="Календарь задач" />
-          <p>Личный календарь ухода и посадок</p>
-        </div>
-        <div className="small-card">
-          <img src={card3} alt="Интерактивная карта участка" />
-          <p>Схема участка с грядками и зонами</p>
+      <div className="hero-small-cards-wrapper">
+        <div className="container">
+          <div className="hero-small-cards">
+            <div className="small-card">
+              <img src={card1} alt="Распознавание болезни по фото" />
+              <p>Определи заболевание по фото растения</p>
+            </div>
+            <div className="small-card">
+              <img src={card2} alt="Календарь задач" />
+              <p>Личный календарь ухода и посадок</p>
+            </div>
+            <div className="small-card">
+              <img src={card3} alt="Интерактивная карта участка" />
+              <p>Схема участка с грядками и зонами</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
