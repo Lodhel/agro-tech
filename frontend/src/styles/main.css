@@ -382,6 +382,23 @@ p {
   background-color: #059669;
 }
 
+.hero-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.hero-phone {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.hero-phone a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .hero-right {
   display: flex;
