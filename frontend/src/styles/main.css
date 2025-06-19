@@ -299,7 +299,7 @@ p {
 .hero {
   width: 100%;
   background: linear-gradient(to bottom, #e6fdf2, #ffffff);
-  padding: 100px 0 200px;
+  padding: 100px 0 50px;
   position: relative;
   overflow: visible;
 }
@@ -432,6 +432,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   margin-top: 32px;
+  margin-bottom: 15px;
 }
 
 .small-card {
