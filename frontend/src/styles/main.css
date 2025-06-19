@@ -107,6 +107,11 @@ p {
 }
 
 /* Stats */
+.stats {
+  background-color: #ffffff;
+  padding: 100px 20px;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
