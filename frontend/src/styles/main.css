@@ -531,6 +531,13 @@ p {
   object-fit: contain;
   margin-bottom: 16px;
 }
+.feature-icon-img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 16px;
+  display: block;
+  object-fit: contain;
+}
 
 .feature-modal h3 {
   font-size: 1.5rem;
