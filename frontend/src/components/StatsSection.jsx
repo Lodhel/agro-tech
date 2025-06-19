@@ -9,6 +9,7 @@ const stats = [
 
 const StatsSection = () => (
   <section className="stats">
+  <div className="container">
     <div className="stats-grid">
       {stats.map(({ number, label }) => (
         <div className="stat-card" key={label}>
@@ -16,6 +17,7 @@ const StatsSection = () => (
           <p>{label}</p>
         </div>
       ))}
+    </div>
     </div>
   </section>
 );

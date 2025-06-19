@@ -66,6 +66,7 @@ const FeaturesSection = () => {
 
   return (
     <section className="features" id="features">
+    <div className="container">
       <h2>Возможности сервиса</h2>
       <div className="features-slider-wrapper">
         <div className="features-slider" ref={sliderRef}>
@@ -77,6 +78,7 @@ const FeaturesSection = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

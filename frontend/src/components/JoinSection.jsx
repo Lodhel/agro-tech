@@ -4,6 +4,7 @@ import qrVK from '../assets/qr-vk.png';
 
 const JoinSection = () => (
   <section className="join" id="contacts">
+  <div className="container">
     <h2>Присоединяйтесь к сообществу</h2>
     <p>Следите за обновлениями, задавайте вопросы и делитесь опытом вместе с другими садоводами</p>
     <div className="join-grid">
@@ -21,6 +22,7 @@ const JoinSection = () => (
           Перейти в VK →
         </a>
       </div>
+    </div>
     </div>
   </section>
 );

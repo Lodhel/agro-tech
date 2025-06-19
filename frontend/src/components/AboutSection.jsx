@@ -11,6 +11,7 @@ const team = [
 
 const AboutSection = () => (
   <section className="about" id="about">
+  <div className="container">
     <h2>О нас</h2>
     <p>
       «Агротех» — это сервис, созданный с любовью к земле и технологиям. Мы объединили знания агрономии, машинного обучения и
@@ -25,6 +26,7 @@ const AboutSection = () => (
           <a href={`mailto:${email}`}>{email}</a>
         </div>
       ))}
+    </div>
     </div>
   </section>
 );
