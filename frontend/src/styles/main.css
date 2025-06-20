@@ -439,7 +439,7 @@ p {
 }
 
 .small-card {
-  background-color: #D8F3FF;
+  background-color: #d8ffe9;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -517,12 +517,11 @@ p {
 }
 
 .feature-modal img {
-  width: 96px;
+  width: 250px;
   height: auto;
   margin-bottom: 16px;
   border-radius: 8px;
   object-fit: contain;
-  background: white;
   padding: 8px;
 }
 
@@ -635,7 +634,7 @@ p {
 }
 
 .feature-card img.feature-icon-img {
-  height: 150px;
+  height: 250px;
   object-fit: contain;
   margin-bottom: 16px;
 }
