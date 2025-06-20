@@ -1,7 +1,7 @@
 import React from 'react';
 import heroImg from '../assets/hero-image.png';
-import card1 from '../assets/card-disease.jpg';
-import card2 from '../assets/card-calendar.jpg';
+import card1 from '../assets/card-disease.png';
+import card2 from '../assets/card-calendar.png';
 import card3 from '../assets/card-map.png';
 
 const HeroSection = () => {

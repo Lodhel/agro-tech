@@ -447,7 +447,7 @@ p {
 }
 
 .small-card {
-  background-color: #C1EDFC;
+  background-color: #D8F3FF;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -610,6 +610,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 380px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .feature-icon {
@@ -618,14 +623,6 @@ p {
   object-fit: contain;
   margin-bottom: 16px;
 }
-
-.feature-card h3 {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 12px;
-}
-
 .feature-button:hover {
   background-color: #f1f5f9;
 }
@@ -639,36 +636,70 @@ p {
   color: #f0fdf4;
 }
 
+.feature-card {
+  background: linear-gradient(to bottom, #e6fdf2, #ffffff);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 380px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card img.feature-icon-img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
 .feature-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 12px;
-}
-
-.feature-card p {
-  font-size: 1rem;
-  color: #4b5563;
-  line-height: 1.5;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .feature-card p {
   font-size: 0.95rem;
-  color: #4b5563;
-  margin-bottom: 16px;
+  color: #374151;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 60px;
 }
 
 .feature-button {
   margin-top: auto;
-  background: #10b981;
+  background-color: #10b981;
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 10px 20px;
   border-radius: 8px;
   font-weight: 500;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .feature-button:hover {
