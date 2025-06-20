@@ -388,7 +388,7 @@ p {
 }
 
 .small-card img {
-  height: 250px;
+  height: 150px;
   object-fit: contain;
   border-radius: 8px;
   margin-bottom: 12px;
