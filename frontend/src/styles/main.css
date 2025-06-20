@@ -533,7 +533,7 @@ p {
   margin-bottom: 16px;
 }
 .feature-icon-img {
-  width: 250px;
+  width: 100px;
   height: auto;
   margin: 0 auto 16px;
   display: block;
@@ -635,8 +635,7 @@ p {
 }
 
 .feature-card img.feature-icon-img {
-  width: 72px;
-  height: 72px;
+  width: 150px;
   object-fit: contain;
   margin-bottom: 16px;
 }
