@@ -500,7 +500,7 @@ p {
   background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
   padding: 40px 32px;
   border-radius: 16px;
-  max-width: 500px;
+  max-width: 250px;
   width: 90%;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -650,7 +650,7 @@ p {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height: 30px;
+  min-height: 60px;
 }
 
 .feature-button {
