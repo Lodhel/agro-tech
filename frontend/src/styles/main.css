@@ -635,7 +635,7 @@ p {
 }
 
 .feature-card img.feature-icon-img {
-  height: 150px;
+  height: 300px;
   object-fit: contain;
   margin-bottom: 16px;
 }
