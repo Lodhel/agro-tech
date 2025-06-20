@@ -146,7 +146,14 @@ const FeaturesSection = () => {
               <img src={selectedFeature.icon} alt={selectedFeature.title} className="feature-icon-img" />
               <h3>{selectedFeature.title}</h3>
               <p>{selectedFeature.text}</p>
-              <p className="feature-details">{selectedFeature.details}</p>
+              <div className="feature-details">
+                {selectedFeature.details
+                  .split('\n')
+                  .filter((line) => line.trim() !== '')
+                  .map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+              </div>
               <button className="modal-close" onClick={closeModal}>Закрыть</button>
             </div>
           </div>
