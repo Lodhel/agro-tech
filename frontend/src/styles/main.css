@@ -488,7 +488,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  align-items: stretch; /* это ключ */
+  align-items: stretch;
 }
 
 .feature-modal-overlay {
@@ -623,7 +623,7 @@ p {
   align-items: center;
   justify-content: space-between;
 
-  min-height: 440px;
+  min-height: 420px;
   box-sizing: border-box;
   position: relative;
 }
