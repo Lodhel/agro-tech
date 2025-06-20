@@ -388,7 +388,7 @@ p {
 }
 
 .small-card img {
-  height: 150px;
+  height: 250px;
   object-fit: contain;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -624,7 +624,7 @@ p {
 }
 
 .feature-card img.feature-icon-img {
-  height: 200px;
+  height: 100px;
   object-fit: contain;
   margin-bottom: 16px;
 }
