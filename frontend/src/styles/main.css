@@ -517,7 +517,7 @@ p {
 }
 
 .feature-modal img {
-  width: 250px;
+  width: 200px;
   height: auto;
   margin-bottom: 16px;
   border-radius: 8px;
@@ -526,13 +526,12 @@ p {
 }
 
 .feature-modal img.feature-icon-img {
-  width: 72px;
-  height: 72px;
+  width: 200px;
   object-fit: contain;
   margin-bottom: 16px;
 }
 .feature-icon-img {
-  width: 100px;
+  width: 200px;
   height: auto;
   margin: 0 auto 16px;
   display: block;
@@ -634,7 +633,7 @@ p {
 }
 
 .feature-card img.feature-icon-img {
-  height: 250px;
+  height: 200px;
   object-fit: contain;
   margin-bottom: 16px;
 }
