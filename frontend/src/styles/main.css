@@ -125,14 +125,6 @@ p {
   margin-bottom: 8px;
 }
 
-/* Features */
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 32px;
-}
-
 /* About / Team */
 .about p {
   max-width: 800px;
@@ -496,7 +488,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  margin-top: 32px;
+  align-items: stretch; /* это ключ */
 }
 
 .feature-modal-overlay {
@@ -612,9 +604,6 @@ p {
   align-items: center;
   justify-content: flex-start;
   height: 100%;
-  min-height: 380px;
-  max-width: 280px;
-  margin: 0 auto;
 }
 
 .feature-icon {
