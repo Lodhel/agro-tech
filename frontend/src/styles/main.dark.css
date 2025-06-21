@@ -86,7 +86,7 @@ p {
 }
 
 .header-button:hover {
-  background-color: #047857;
+  background-color: white;
 }
 
 .cta-button {
@@ -562,7 +562,7 @@ p {
 }
 
 .modal-close:hover {
-  background: #047857;
+  background: white;
 }
 
 @keyframes fadeInModal {
