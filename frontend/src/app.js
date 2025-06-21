@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/main.css';
+import './styles/main.dark.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import StatsSection from './components/StatsSection';
