@@ -39,7 +39,7 @@ p {
 }
 
 .header {
-  background-color: white;
+  background-color: #111827;
   padding: 16px 32px;
   border-bottom: 1px solid #f3f4f6;
   position: sticky;
@@ -57,6 +57,7 @@ p {
 
 .logo {
   font-weight: bold;
+  color: #10b981;
   font-size: 1.25rem;
   color: #10b981;
 }
@@ -69,6 +70,7 @@ p {
 
 .nav a {
   text-decoration: none;
+  color: #f9fafb;
   font-size: 0.95rem;
   color: #d1d5db;
   transition: color 0.3s;
