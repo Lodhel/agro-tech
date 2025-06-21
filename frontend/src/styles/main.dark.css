@@ -57,7 +57,7 @@ p {
 
 .logo {
   font-weight: bold;
-  color: #039668;
+  color: #037752;
   font-size: 1.25rem;
 }
 
@@ -75,11 +75,11 @@ p {
 }
 
 .nav a:hover {
-  color: #039668;
+  color: #037752;
 }
 
 .header-button {
-  background-color: #039668;
+  background-color: #037752;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -94,7 +94,7 @@ p {
   margin-top: 24px;
   display: inline-block;
   padding: 12px 24px;
-  background-color: #039668;
+  background-color: #037752;
   color: white;
   font-weight: 500;
   border-radius: 8px;
@@ -121,7 +121,7 @@ p {
 
 .stat-card h3 {
   font-size: 2rem;
-  color: #039668;
+  color: #037752;
   margin-bottom: 8px;
 }
 
@@ -211,7 +211,7 @@ p {
   display: inline-block;
   margin-top: 12px;
   padding: 8px 16px;
-  background-color: #039668;
+  background-color: #037752;
   color: white;
   font-weight: 500;
   font-size: 0.95rem;
@@ -244,7 +244,7 @@ p {
 }
 
 .footer-links a:hover {
-  color: #039668;
+  color: #037752;
   text-decoration: underline;
 }
 
@@ -297,7 +297,7 @@ p {
 }
 
 .hero-left .cta-button {
-  background-color: #039668;
+  background-color: #037752;
   color: white;
   padding: 12px 24px;
   font-size: 1rem;
@@ -328,7 +328,7 @@ p {
 
 .hero-left .cta-button {
   display: inline-block;
-  background-color: #039668;
+  background-color: #037752;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -411,7 +411,7 @@ p {
 .hero-subtitle {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #039668;
+  color: #037752;
   margin-bottom: 12px;
 }
 
@@ -552,7 +552,7 @@ p {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: #039668;
+  background: #037752;
   color: white;
   padding: 6px 12px;
   border: none;
@@ -655,7 +655,7 @@ p {
 
 .feature-button {
   margin-top: auto;
-  background-color: #039668;
+  background-color: #037752;
   color: white;
   border: none;
   padding: 10px 20px;
