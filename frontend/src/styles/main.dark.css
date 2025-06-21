@@ -57,9 +57,8 @@ p {
 
 .logo {
   font-weight: bold;
-  color: #10b981;
+  color: #039668;
   font-size: 1.25rem;
-  color: #10b981;
 }
 
 .nav {
@@ -72,16 +71,15 @@ p {
   text-decoration: none;
   color: #f9fafb;
   font-size: 0.95rem;
-  color: #d1d5db;
   transition: color 0.3s;
 }
 
 .nav a:hover {
-  color: #10b981;
+  color: #039668;
 }
 
 .header-button {
-  background-color: #10b981;
+  background-color: #039668;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -89,14 +87,14 @@ p {
 }
 
 .header-button:hover {
-  background-color: #059669;
+  background-color: #047857;
 }
 
 .cta-button {
   margin-top: 24px;
   display: inline-block;
   padding: 12px 24px;
-  background-color: #10b981;
+  background-color: #039668;
   color: white;
   font-weight: 500;
   border-radius: 8px;
@@ -105,7 +103,7 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #059669;
+  background-color: #047857;
 }
 
 /* Stats */
@@ -123,7 +121,7 @@ p {
 
 .stat-card h3 {
   font-size: 2rem;
-  color: #10b981;
+  color: #039668;
   margin-bottom: 8px;
 }
 
@@ -213,7 +211,7 @@ p {
   display: inline-block;
   margin-top: 12px;
   padding: 8px 16px;
-  background-color: #10b981;
+  background-color: #039668;
   color: white;
   font-weight: 500;
   font-size: 0.95rem;
@@ -223,13 +221,13 @@ p {
 }
 
 .qr-button:hover {
-  background-color: #059669;
+  background-color: #047857;
 }
 
 /* Footer */
 .footer {
-  background-color: #f3f4f6;
-  color: white;
+  background-color: #111827;
+  color: #f9fafb;
   padding: 40px 20px;
   text-align: center;
 }
@@ -239,13 +237,14 @@ p {
 }
 
 .footer-links a {
-  color: #d1d5db;
+  color: #9ca3af;
   margin: 0 12px;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
 .footer-links a:hover {
+  color: #039668;
   text-decoration: underline;
 }
 
@@ -298,7 +297,7 @@ p {
 }
 
 .hero-left .cta-button {
-  background-color: #10b981;
+  background-color: #039668;
   color: white;
   padding: 12px 24px;
   font-size: 1rem;
@@ -309,7 +308,7 @@ p {
 }
 
 .hero-left .cta-button:hover {
-  background-color: #059669;
+  background-color: #047857;
 }
 
 .hero-right img {
@@ -329,7 +328,7 @@ p {
 
 .hero-left .cta-button {
   display: inline-block;
-  background-color: #10b981;
+  background-color: #039668;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -340,7 +339,7 @@ p {
 }
 
 .hero-left .cta-button:hover {
-  background-color: #059669;
+  background-color: #047857;
 }
 
 .hero-header {
@@ -412,7 +411,7 @@ p {
 .hero-subtitle {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #10b981;
+  color: #039668;
   margin-bottom: 12px;
 }
 
@@ -553,7 +552,7 @@ p {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: #10b981;
+  background: #039668;
   color: white;
   padding: 6px 12px;
   border: none;
@@ -564,7 +563,7 @@ p {
 }
 
 .modal-close:hover {
-  background: #059669;
+  background: #047857;
 }
 
 @keyframes fadeInModal {
@@ -656,7 +655,7 @@ p {
 
 .feature-button {
   margin-top: auto;
-  background-color: #10b981;
+  background-color: #039668;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -668,7 +667,7 @@ p {
 }
 
 .feature-button:hover {
-  background-color: #059669;
+  background-color: #047857;
 }
 
 .gradient-wrapper {
