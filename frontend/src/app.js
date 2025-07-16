@@ -9,26 +9,33 @@ import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState('light');
+
   useEffect(() => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(prefersDark ? 'dark' : 'light');
+    const saved = localStorage.getItem('theme');
+    const initial = saved || (prefersDark ? 'dark' : 'light');
+    setTheme(initial);
+    applyTheme(initial);
   }, []);
 
-  useEffect(() => {
-    const existingLink = document.getElementById('theme-stylesheet');
-    if (existingLink) {
-      existingLink.href = theme === 'dark' ? './styles/main.dark.css' : './styles/main.css';
+  const applyTheme = (theme) => {
+    const lightLink = document.getElementById('theme-light');
+    const darkLink = document.getElementById('theme-dark');
+
+    if (theme === 'dark') {
+      lightLink.disabled = true;
+      darkLink.disabled = false;
     } else {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.id = 'theme-stylesheet';
-      link.href = theme === 'dark' ? './styles/main.dark.css' : './styles/main.css';
-      document.head.appendChild(link);
+      lightLink.disabled = false;
+      darkLink.disabled = true;
     }
-  }, [theme]);
+  };
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    applyTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
   return (
