@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useThemeLoader } from './components/ThemeLoader';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import StatsSection from './components/StatsSection';
@@ -10,29 +11,18 @@ import Footer from './components/Footer';
 function App() {
   const [theme, setTheme] = useState('light');
 
-  // Смотрим настройки пользователя
   useEffect(() => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     setTheme(saved || (prefersDark ? 'dark' : 'light'));
   }, []);
 
-  // Подключаем нужный CSS-файл
-  useEffect(() => {
-    const existing = document.getElementById('app-theme');
-    if (existing) existing.remove();
-
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.id = 'app-theme';
-    link.href = `./styles/main${theme === 'dark' ? '.dark' : ''}.css`; // путь из /public
-    document.head.appendChild(link);
-  }, [theme]);
+  useThemeLoader(theme);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('theme', newTheme);
-    setTheme(newTheme);
+    const next = theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', next);
+    setTheme(next);
   };
 
   return (
