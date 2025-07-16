@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useThemeLoader } from './components/ThemeLoader';
+import React from 'react';
+import './styles/main.dark.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import StatsSection from './components/StatsSection';
@@ -9,25 +9,17 @@ import JoinSection from './components/JoinSection';
 import Footer from './components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(saved || (prefersDark ? 'dark' : 'light'));
-  }, []);
-
-  useThemeLoader(theme);
-
   return (
     <>
       <Header />
       <HeroSection />
       <StatsSection />
+
       <section className="gradient-wrapper">
-        <FeaturesSection />
-        <AboutSection />
+          <FeaturesSection />
+          <AboutSection />
       </section>
+
       <JoinSection />
       <Footer />
     </>

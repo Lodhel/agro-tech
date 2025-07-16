@@ -39,6 +39,7 @@ p {
 }
 
 .header {
+  background-color: white;
   padding: 16px 32px;
   border-bottom: 1px solid #e5e7eb;
   position: sticky;
@@ -669,5 +670,6 @@ p {
 }
 
 .gradient-wrapper {
+  background: linear-gradient(to bottom, #ffffff, #e6fdf2);
   padding: 60px 20px 100px;
 }
