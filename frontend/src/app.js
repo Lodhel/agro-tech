@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import StatsSection from './components/StatsSection';
@@ -10,33 +11,30 @@ import Footer from './components/Footer';
 function App() {
   const [theme, setTheme] = useState('light');
 
-  // При первом рендере определяем тему
+  // Определяем дефолтную тему по настройкам браузера
   useEffect(() => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const saved = localStorage.getItem('theme');
-    const initial = saved || (prefersDark ? 'dark' : 'light');
-    setTheme(initial);
-    applyTheme(initial);
+    setTheme(saved || (prefersDark ? 'dark' : 'light'));
   }, []);
 
-  const applyTheme = (theme) => {
-    const lightLink = document.getElementById('theme-light');
-    const darkLink = document.getElementById('theme-dark');
+  // Подключаем нужный CSS-файл из /public/styles
+  useEffect(() => {
+    const existing = document.getElementById('app-theme');
+    if (existing) existing.remove();
 
-    if (theme === 'dark') {
-      lightLink.disabled = true;
-      darkLink.disabled = false;
-    } else {
-      lightLink.disabled = false;
-      darkLink.disabled = true;
-    }
-  };
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.id = 'app-theme';
+    link.href = `/styles/main${theme === 'dark' ? '.dark' : ''}.css`;
+    document.head.appendChild(link);
+  }, [theme]);
 
+  // Смена темы вручную
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-    applyTheme(newTheme);
     localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
   };
 
   return (
@@ -45,27 +43,29 @@ function App() {
         onClick={toggleTheme}
         style={{
           position: 'fixed',
-          top: '16px',
-          right: '16px',
-          zIndex: 10000,
-          background: '#10b981',
-          color: '#fff',
+          top: 16,
+          right: 16,
+          zIndex: 1001,
           padding: '8px 16px',
           borderRadius: '8px',
+          background: '#10b981',
+          color: '#fff',
           border: 'none',
-          cursor: 'pointer',
+          cursor: 'pointer'
         }}
       >
-        {theme === 'dark' ? 'Светлая тема' : 'Тёмная тема'}
+        Сменить тему
       </button>
 
       <Header />
       <HeroSection />
       <StatsSection />
+
       <section className="gradient-wrapper">
         <FeaturesSection />
         <AboutSection />
       </section>
+
       <JoinSection />
       <Footer />
     </>
