@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 function App() {
   const [theme, setTheme] = useState('light');
 
+  // При первом рендере определяем тему
   useEffect(() => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const saved = localStorage.getItem('theme');
