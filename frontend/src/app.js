@@ -9,12 +9,7 @@ import JoinSection from './components/JoinSection';
 import Footer from './components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-      const saved = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      return saved || (prefersDark ? 'dark' : 'light');
-    });
-
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     const saved = localStorage.getItem('theme');
@@ -32,24 +27,6 @@ function App() {
 
   return (
     <>
-      <button
-        onClick={toggleTheme}
-        style={{
-          position: 'fixed',
-          top: 16,
-          right: 16,
-          zIndex: 1001,
-          padding: '8px 16px',
-          borderRadius: '8px',
-          background: '#10b981',
-          color: '#fff',
-          border: 'none',
-          cursor: 'pointer'
-        }}
-      >
-        Сменить тему
-      </button>
-
       <Header />
       <HeroSection />
       <StatsSection />
