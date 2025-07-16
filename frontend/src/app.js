@@ -9,7 +9,12 @@ import JoinSection from './components/JoinSection';
 import Footer from './components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return saved || (prefersDark ? 'dark' : 'light');
+    });
+
 
   useEffect(() => {
     const saved = localStorage.getItem('theme');
