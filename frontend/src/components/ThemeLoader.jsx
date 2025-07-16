@@ -1,6 +1,7 @@
 import { useLayoutEffect } from 'react';
 
 export function useThemeLoader(theme) {
+  console.log(theme)
   useLayoutEffect(() => {
     if (theme === 'dark') {
       import('../styles/main.dark.css');
