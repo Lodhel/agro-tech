@@ -3,7 +3,7 @@ import React from 'react';
 const team = [
   { name: 'Роман Татаринов', role: 'Founder & Backend', email: 'r.tatarinov@hotmail.com' },
   { name: 'Анастасия Иванова', role: 'UX/UI', email: 'lorentini10@gmail.com' },
-  { name: 'Имя Фамилия', role: 'Роль', email: 'user@agrotech.ru' },
+  { name: 'Александра Аносова', role: 'Product Manager', email: 'anosova.sasha97@gmail.com' },
 ];
 
 const AboutSection = () => (

@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="hero-grid">
         <div className="hero-left">
           <div className="hero-phone-floating">
-            <a href="tel:+79274222094">+7 927 422‑20‑94</a>
+            +7 927 422‑20‑94
           </div>
 
           <h1>AgroSpector</h1>
