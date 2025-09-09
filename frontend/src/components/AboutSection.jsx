@@ -4,6 +4,9 @@ const team = [
   { name: 'Роман Татаринов', role: 'Founder & Backend', email: 'r.tatarinov@hotmail.com' },
   { name: 'Анастасия Иванова', role: 'UX/UI', email: 'lorentini10@gmail.com' },
   { name: 'Александра Аносова', role: 'Product Manager', email: 'anosova.sasha97@gmail.com' },
+  { name: 'Роман Татаринов', role: 'Founder & Backend', email: 'r.tatarinov@hotmail.com' },
+  { name: 'Анастасия Иванова', role: 'UX/UI', email: 'lorentini10@gmail.com' },
+  { name: 'Александра Аносова', role: 'Product Manager', email: 'anosova.sasha97@gmail.com' },
 ];
 
 const AboutSection = () => (
