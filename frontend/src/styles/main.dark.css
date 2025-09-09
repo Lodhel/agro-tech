@@ -147,6 +147,31 @@ p {
   text-align: center;
 }
 
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #ffffff; /* чисто белый */
+}
+
+.team-card p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #d1d5db; /* светло-серый */
+}
+
+.team-card a {
+  font-size: 0.9rem;
+  color: #34d399; /* зелёный акцент (Tailwind emerald-400) */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.team-card a:hover {
+  color: #10b981; /* ярче при наведении */
+}
+
 .team-photo {
   width: 100%;
   max-width: 200px;
