@@ -23,13 +23,6 @@ const JoinSection = () => (
           Перейти в VK →
         </a>
       </div>
-      <div className="join-card">
-        <p className="qr-label">Telegram-бот</p>
-        <img src={qrBot} alt="QR Bot" className="qr" />
-        <a href="https://t.me/AgroSpectorBot" target="_blank" rel="noopener noreferrer" className="qr-button">
-          Перейти в Telegram →
-        </a>
-      </div>
     </div>
     </div>
   </section>
