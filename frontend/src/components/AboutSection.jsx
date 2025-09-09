@@ -7,9 +7,9 @@ const team = [
   { name: '', role: '', email: '' },
   { name: 'Иван Фамилия', role: 'SMM', email: '' },
   { name: '', role: '', email: '' },
-  { name: 'Карина Самсонова', role: 'Mobile dev.', email: '' },
+  { name: 'Карина Самсонова', role: 'Mobile dev.', email: 'karina-samsonova-2002@mail.ru' },
   { name: 'Александра Кошкина', role: 'Financial Manager', email: 'msk-aleksandra@yandex.ru' },
-  { name: 'Елена Фамилия', role: 'ML & DataScience', email: 'burnyashevaelena@mail.ru' },
+  { name: 'Елена Бурняшева', role: 'ML & DataScience', email: 'burnyashevaelena@mail.ru' },
 ];
 
 const AboutSection = () => (
