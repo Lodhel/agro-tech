@@ -9,9 +9,9 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero-grid">
         <div className="hero-left">
-          <div className="hero-phone-floating">
-            +7 927 422‑20‑94
-          </div>
+          {/*<div className="hero-phone-floating">*/}
+          {/*  +7 927 422‑20‑94*/}
+          {/*</div>*/}
 
           <h1>AgroSpector</h1>
           <p className="hero-subtitle">Цифровой помощник для садоводов и огородников</p>
