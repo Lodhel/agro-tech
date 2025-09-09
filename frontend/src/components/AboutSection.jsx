@@ -5,7 +5,7 @@ const team = [
   { name: 'Роман Татаринов', role: 'Founder & Backend', email: 'r.tatarinov@hotmail.com' },
   { name: 'Александра Аносова', role: 'Product Manager', email: 'anosova.sasha97@gmail.com' },
   { name: '', role: '', email: '' },
-  { name: 'Иван Фамилия', role: 'SMM', email: '' },
+  { name: 'Иван Тутов', role: 'SMM', email: 'vanatutov2@gmail.com' },
   { name: '', role: '', email: '' },
   { name: 'Карина Самсонова', role: 'Mobile dev.', email: 'karina-samsonova-2002@mail.ru' },
   { name: 'Александра Кошкина', role: 'Financial Manager', email: 'msk-aleksandra@yandex.ru' },
